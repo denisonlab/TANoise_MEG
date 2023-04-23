@@ -15,5 +15,6 @@ Rachel N Denison, Karen Tian, David J Heeger, Marisa Carrasco<br>
 ### Dependencies
 
 - [FieldTrip](https://www.fieldtriptoolbox.org/) Version FieldTrip-20220707
+- [Psychtoolbox](http://psychtoolbox.org/) Version 3.0.18
 - [vistadisp](https://github.com/vistalab/vistadisp)
 - [rd-utils](https://github.com/racheldenison/rd-utils)
