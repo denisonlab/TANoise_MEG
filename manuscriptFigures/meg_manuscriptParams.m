@@ -9,8 +9,7 @@ p = meg_params('TANoise_ITPCsession8'); % load ITPC params
 
 %% Figure directory
 dateStr = datetime('now','TimeZone','local','Format','yyMMdd');
-user = 'kantian'; % karen 
-figDir = sprintf('/Users/%s/Dropbox/github/ta-meg-analysis2/manuscriptFigures/figs',user);
+figDir = sprintf('manuscriptFigures/figs');
 if ~exist(figDir, 'dir')
     mkdir(figDir)
 end

@@ -15,6 +15,8 @@ This repository contains the behavioral and MEG analyses associated with the pap
 
 ### Figures
 
+Figure 6<br> \|![](manuscriptFigures/figs/meg_msFigs_TE_byPrecue_mdlFit_2Hz_bar_intercept.svg) \| ![](manuscriptFigures/figs/meg_msFigs_TE_byPrecue_mdlFit_2Hz_bar_slope.svg) \| ![](manuscriptFigures/figs/meg_msFigs_TE_byPrecue_mdlFit_2Hz_bar_amplitude.svg) \|
+
 Figure 5a and Supplementary Figure 3
 
 |                                  Baseline period                                   |                              Anticipatory period                               |
