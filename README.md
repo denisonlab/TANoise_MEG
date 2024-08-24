@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/71864588.svg)](https://zenodo.org/badge/latestdoi/71864588)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13368267.svg)](https://zenodo.org/records/13368267)
 
 This repository contains the behavioral and MEG analyses associated with the paper:<br>
 
