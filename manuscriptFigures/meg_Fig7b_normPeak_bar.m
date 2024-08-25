@@ -1,9 +1,8 @@
-function meg_manuscriptFigs_normPeak_bar
+function meg_Fig7b_normPeak_bar
 % function meg_manuscriptFigs_normPeak_bar
 
 %% Load peak data
-user = 'kantian';
-filename = sprintf('/Users/%s/Dropbox/Data/TANoise/fromRachel/itpcNorm_TS_Peaks_N10_20211225_workspace.mat',user); 
+filename = 'itpcNorm_TS_Peaks_workspace.mat'; 
 load(filename)
 
 %% Figure settings
@@ -132,51 +131,10 @@ end
 
 if saveFigs
     if plotSubjects
-        figTitle = sprintf('meg_manuscriptFigs_normPeak_bar_subjects');
+        figTitle = sprintf('Fig7b_normPeak_bar_subjects');
     else
-        figTitle = sprintf('meg_manuscriptFigs_normPeak_bar');
+        figTitle = sprintf('Fig7b_normPeak_bar');
     end
-    saveas(gcf,sprintf('%s/%s.%s', figDir, figTitle, figFormat))
-end
-
-%% Try a square plot for T1 precue T1 precue T2 
-figure
-fh = subplot(1,1,1);
-hold on
-meg_figureStyle
-markerSize = 170; 
-set(gcf,'Position',[100 100 style.height style.height])
-% subject scatters
-for iT = 2:-1:1
-    x = squeeze(subjectPeak(1,iT,:));
-    y = squeeze(subjectPeak(2,iT,:));
-    faceColor = p.cueColors(3,:); % 3 - grey 
-    scatter(x,y,markerSize,'filled','MarkerFaceColor','w')
-    if iT==1
-        scatter(x,y,markerSize,'filled','MarkerFaceColor',faceColor,'MarkerEdgeColor','w','MarkerFaceAlpha',1)
-    elseif iT==2
-        scatter(x,y,markerSize,'filled','MarkerFaceColor','w','MarkerEdgeColor',faceColor,'MarkerFaceAlpha',1)
-    end
-end
-ylabel('Precue T2')
-xlabel('Precue T1')
-
-axis square
-axis equal
-
-xlim([-0.1 0.2])
-ylim([-0.1 0.2])
-xticks(-0.1:0.1:0.2)
-yticks(-0.1:0.1:0.2)
-
-xline(0,'k')
-yline(0,'k')
-l = refline(1,0);
-l.Color = 'k'; 
-
-if saveFigs
-    % figTitle = sprintf('meg_manuscriptFigs_normPeak_T%d_scatter',iT);
-    figTitle = sprintf('meg_manuscriptFigs_normPeak_T1T2_scatter'); 
     saveas(gcf,sprintf('%s/%s.%s', figDir, figTitle, figFormat))
 end
 

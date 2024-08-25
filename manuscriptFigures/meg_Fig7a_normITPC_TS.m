@@ -9,9 +9,8 @@ restrictYLim = 0; % turn on for group-level manuscript matching ylims
 saveFigs = 1; 
 
 % Figure directory 
-user = 'kantian'; 
 dateStr = datetime('now','TimeZone','local','Format','yyMMdd');
-figDir = sprintf('/Users/%s/Dropbox/github/ta-meg-analysis2/manuscriptFigures/figs',user); 
+figDir = sprintf('figs'); 
 if ~exist(figDir, 'dir')
     mkdir(figDir)
 end
@@ -35,7 +34,7 @@ btoi = 470:970; % baseline normaliation window
 btIdx = (abs(p.tstart)+btoi(1):abs(p.tstart)+btoi(end))+1; % baseline normalization time index 
 
 %% Load data 
-filename = sprintf('/Users/%s/Dropbox/Data/TANoise/MEG/Group/mat/groupA_ITPCspectrogram_byAtt.mat',user); 
+filename = sprintf('figData/groupA_ITPCspectrogram_byAtt.mat'); 
 load(filename)
 
 %% Normalize data
@@ -164,7 +163,7 @@ end
 
 % --- Save fig ---
 if saveFigs
-    figTitle = sprintf('meg_manuscriptFigs_normITPC_TS_%s',dateStr);
+    figTitle = sprintf('Fig7a_normITPC_TS');
     saveas(gcf,sprintf('%s/%s.%s', figDir, figTitle, figFormat))
 end
 
