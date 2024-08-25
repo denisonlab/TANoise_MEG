@@ -1,8 +1,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13368267.svg)](https://zenodo.org/records/13368267)
 
-This repository contains the behavioral and MEG analyses associated with the paper:<br>
+This repository contains the behavioral and MEG analyses associated with the <a href="https://www.biorxiv.org/content/10.1101/2022.11.18.517084v3" target="_blank">paper</a>:<br>
 
-<a href="https://www.biorxiv.org/content/10.1101/2022.11.18.517084v3" target="_blank">Anticipatory and evoked visual cortical dynamics of voluntary temporal attention</a><br> by Rachel Denison\*, Karen Tian\*, David Heeger, and Marisa Carrasco<br><br> 
+##Anticipatory and evoked visual cortical dynamics of voluntary temporal attention<br> by Rachel Denison\*, Karen Tian\*, David Heeger, and Marisa Carrasco<be>
 
 ### Experiment code
 
