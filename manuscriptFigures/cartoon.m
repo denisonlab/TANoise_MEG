@@ -1,6 +1,5 @@
-% Cartoon: Single trial power vs phase consistency
+% ITPC cartoon
 
-%% 
 figure
 set(gcf,'Position',[100 100 300 400]) 
 
