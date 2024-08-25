@@ -9,7 +9,7 @@ p = meg_params('TANoise_ITPCsession8'); % load ITPC params
 
 %% Figure directory
 dateStr = datetime('now','TimeZone','local','Format','yyMMdd');
-figDir = sprintf('manuscriptFigures/figs');
+figDir = sprintf('figs');
 if ~exist(figDir, 'dir')
     mkdir(figDir)
 end
