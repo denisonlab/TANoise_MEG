@@ -5,10 +5,6 @@ This repository contains the behavioral and MEG analyses associated with the <a 
 ### Anticipatory and evoked visual cortical dynamics of voluntary temporal attention
 by Rachel Denison\*, Karen Tian\*, David Heeger, and Marisa Carrasco<br>
 
-### Experiment code
-
--   <https://github.com/denisonlab/TANoise_MEG/tree/main/Experiment>
-
 ### Dependencies
 
 -   [FieldTrip](https://www.fieldtriptoolbox.org/) Version FieldTrip-20220707
